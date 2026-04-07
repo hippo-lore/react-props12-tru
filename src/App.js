@@ -1,5 +1,7 @@
+
 import CardList from "./components/CardList/CardList";
 import cardsData from "./data";
+import UserForm from "./components/UserForm/UserForm";
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
       </h1>
 
       <CardList cards={cardsData} />
+      <UserForm />
     </div>
   );
 }
