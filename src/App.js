@@ -2,7 +2,9 @@
 import CardList from "./components/CardList/CardList";
 import cardsData from "./data";
 import UserForm from "./components/UserForm/UserForm";
+import ProfileCard from "./components/ProfileCard/ProfileCard";
 import ColorBlock from "./components/ColorBlock/ColorBlock";
+
 
 function App() {
   return (
@@ -28,7 +30,9 @@ function App() {
 
       <CardList cards={cardsData} />
       <UserForm />
+      <ProfileCard />
       <ColorBlock />
+      
     </div>
   );
 }
