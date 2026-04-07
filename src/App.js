@@ -2,6 +2,7 @@
 import CardList from "./components/CardList/CardList";
 import cardsData from "./data";
 import UserForm from "./components/UserForm/UserForm";
+import ColorBlock from "./components/ColorBlock/ColorBlock";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
 
       <CardList cards={cardsData} />
       <UserForm />
+      <ColorBlock />
     </div>
   );
 }
