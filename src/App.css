@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* фон */
+.app {
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(to bottom, #1a001f, #330033);
+  overflow: hidden;
+  position: relative;
+}
+
+/* заголовок */
+.title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  color: #ffffff;
+
+  text-shadow:
+    0 0 10px #ff69b4,
+    0 0 20px #ff1493,
+    0 0 30px #ff69b4,
+    0 0 40px #ff1493;
+
+  margin-bottom: 30px;
+}
+
+/* 🌸 падаюча сакура */
+.app::before {
+  content: "🌸 🌸 🌸 🌸 🌸 🌸 🌸 🌸 🌸 🌸";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  font-size: 24px;
+  animation: sakura 10s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes sakura {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
